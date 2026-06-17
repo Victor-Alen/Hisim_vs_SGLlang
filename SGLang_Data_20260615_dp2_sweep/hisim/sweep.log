@@ -1,0 +1,61 @@
+=== rr=1 il=256 ol=128 ===
+done rr=1 il=256 ol=128
+=== rr=1 il=256 ol=512 ===
+done rr=1 il=256 ol=512
+=== rr=1 il=1024 ol=128 ===
+done rr=1 il=1024 ol=128
+=== rr=1 il=1024 ol=512 ===
+done rr=1 il=1024 ol=512
+=== rr=1 il=2048 ol=128 ===
+done rr=1 il=2048 ol=128
+=== rr=1 il=2048 ol=512 ===
+done rr=1 il=2048 ol=512
+=== rr=2 il=256 ol=128 ===
+done rr=2 il=256 ol=128
+=== rr=2 il=256 ol=512 ===
+done rr=2 il=256 ol=512
+=== rr=2 il=1024 ol=128 ===
+done rr=2 il=1024 ol=128
+=== rr=2 il=1024 ol=512 ===
+done rr=2 il=1024 ol=512
+=== rr=2 il=2048 ol=128 ===
+done rr=2 il=2048 ol=128
+=== rr=2 il=2048 ol=512 ===
+done rr=2 il=2048 ol=512
+=== rr=4 il=256 ol=128 ===
+done rr=4 il=256 ol=128
+=== rr=4 il=256 ol=512 ===
+done rr=4 il=256 ol=512
+=== rr=4 il=1024 ol=128 ===
+done rr=4 il=1024 ol=128
+=== rr=4 il=1024 ol=512 ===
+done rr=4 il=1024 ol=512
+=== rr=4 il=2048 ol=128 ===
+done rr=4 il=2048 ol=128
+=== rr=4 il=2048 ol=512 ===
+done rr=4 il=2048 ol=512
+=== rr=8 il=256 ol=128 ===
+done rr=8 il=256 ol=128
+=== rr=8 il=256 ol=512 ===
+done rr=8 il=256 ol=512
+=== rr=8 il=1024 ol=128 ===
+done rr=8 il=1024 ol=128
+=== rr=8 il=1024 ol=512 ===
+done rr=8 il=1024 ol=512
+=== rr=8 il=2048 ol=128 ===
+done rr=8 il=2048 ol=128
+=== rr=8 il=2048 ol=512 ===
+done rr=8 il=2048 ol=512
+=== rr=12 il=256 ol=128 ===
+done rr=12 il=256 ol=128
+=== rr=12 il=256 ol=512 ===
+done rr=12 il=256 ol=512
+=== rr=12 il=1024 ol=128 ===
+done rr=12 il=1024 ol=128
+=== rr=12 il=1024 ol=512 ===
+done rr=12 il=1024 ol=512
+=== rr=12 il=2048 ol=128 ===
+done rr=12 il=2048 ol=128
+=== rr=12 il=2048 ol=512 ===
+done rr=12 il=2048 ol=512
+ALL DONE

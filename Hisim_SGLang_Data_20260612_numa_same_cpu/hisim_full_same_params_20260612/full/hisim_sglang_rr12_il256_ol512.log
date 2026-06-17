@@ -1,0 +1,52 @@
+benchmark_args=Namespace(bench_mode='simulation', backend='sglang', base_url=None, host='127.0.0.1', port=32502, dataset_name='random-ids', dataset_path='', model='/mnt/nfs02/users/tjiang/Gitrepo/models/Qwen3-8B', served_model_name=None, tokenizer=None, num_prompts=200, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=256, random_output_len=512, random_range_ratio=0.0, image_count=1, image_resolution='1080p', image_format='jpeg', image_content='random', request_rate=12.0, use_trace_timestamps=False, max_concurrency=None, output_file='/mnt/nfs02/users/tjiang/Gitrepo/sglang/pd_numa_same_cpu_sweep_20260612/hisim_full_same_params_20260612/full/hisim_sglang_rr12_il256_ol512.jsonl', output_details=False, print_requests=False, disable_tqdm=True, disable_stream=False, return_logprob=False, seed=1, disable_ignore_eos=False, extra_request_body=None, apply_chat_template=False, profile=False, plot_throughput=False, profile_activities=['CPU', 'GPU'], profile_num_steps=None, profile_by_stage=False, profile_stages=None, lora_name=None, lora_request_distribution='uniform', lora_zipf_alpha=1.5, prompt_suffix='', pd_separated=True, profile_prefill_url=None, profile_decode_url=None, flush_cache=True, flush_cache_timeout=5.0, warmup_requests=1, tokenize_prompt=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256, gsp_range_ratio=1.0, mooncake_slowdown_factor=1.0, mooncake_num_rounds=1, mooncake_workload='conversation', tag=None)
+Namespace(bench_mode='simulation', backend='sglang', base_url=None, host='127.0.0.1', port=32502, dataset_name='random-ids', dataset_path='', model='/mnt/nfs02/users/tjiang/Gitrepo/models/Qwen3-8B', served_model_name=None, tokenizer=None, num_prompts=200, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=256, random_output_len=512, random_range_ratio=0.0, image_count=1, image_resolution='1080p', image_format='jpeg', image_content='random', request_rate=12.0, use_trace_timestamps=False, max_concurrency=None, output_file='/mnt/nfs02/users/tjiang/Gitrepo/sglang/pd_numa_same_cpu_sweep_20260612/hisim_full_same_params_20260612/full/hisim_sglang_rr12_il256_ol512.jsonl', output_details=False, print_requests=False, disable_tqdm=True, disable_stream=False, return_logprob=False, seed=1, disable_ignore_eos=False, extra_request_body=None, apply_chat_template=False, profile=False, plot_throughput=False, profile_activities=['CPU', 'GPU'], profile_num_steps=None, profile_by_stage=False, profile_stages=None, lora_name=None, lora_request_distribution='uniform', lora_zipf_alpha=1.5, prompt_suffix='', pd_separated=True, profile_prefill_url=None, profile_decode_url=None, flush_cache=True, flush_cache_timeout=5.0, warmup_requests=1, tokenize_prompt=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256, gsp_range_ratio=1.0, mooncake_slowdown_factor=1.0, mooncake_num_rounds=1, mooncake_workload='conversation', tag=None)
+
+#Input tokens: 25437
+#Output tokens: 49461
+Starting warmup with 1 sequences...
+Warmup completed with 1 sequences. Starting main benchmark run...
+flush_cache response: Cache flushed.
+Please check backend logs for more details. (When there are running or waiting requests, the operation will not be performed.)
+async_request_profile api_url='http://127.0.0.1:32502/start_profile' body={'activities': ['CPU', 'GPU'], 'num_steps': None, 'profile_by_stage': False, 'profile_stages': None}
+Simulation triggered
+async_request_profile api_url='http://127.0.0.1:32502/start_profile' body={'activities': ['CPU', 'GPU'], 'num_steps': None, 'profile_by_stage': False, 'profile_stages': None}
+Simulation stop triggered
+
+============ Serving Benchmark Result ============
+Benchmark Mode:                          simulation
+Backend:                                 sglang    
+Traffic request rate:                    12.0      
+Max request concurrency:                 not set   
+Successful requests:                     200       
+Benchmark duration (s):                  22.54     
+Elapsed time (s):                        7.42      
+Total input tokens:                      27177     
+Total input text tokens:                 -1        
+Total input vision tokens:               -1        
+Total generated tokens:                  49461     
+Total generated tokens (retokenized):    -1        
+Request throughput (req/s):              8.87      
+Input token throughput (tok/s):          1205.88   
+Output token throughput (tok/s):         2194.66   
+Peak output token throughput (tok/s):    -1.00     
+Peak concurrent requests:                -1        
+Total token throughput (tok/s):          3400.54   
+Concurrency:                             -1.00     
+----------------End-to-End Latency----------------
+Mean E2E Latency (ms):                   4305.23   
+Median E2E Latency (ms):                 4113.74   
+---------------Time to First Token----------------
+Mean TTFT (ms):                          26.18     
+Median TTFT (ms):                        25.57     
+P99 TTFT (ms):                           42.64     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          17.50     
+Median TPOT (ms):                        17.88     
+P99 TPOT (ms):                           21.02     
+---------------Inter-Token Latency----------------
+Mean ITL (ms):                           17.37     
+Median ITL (ms):                         14.85     
+P95 ITL (ms):                            33.25     
+P99 ITL (ms):                            54.98     
+Max ITL (ms):                            84.44     
+==================================================

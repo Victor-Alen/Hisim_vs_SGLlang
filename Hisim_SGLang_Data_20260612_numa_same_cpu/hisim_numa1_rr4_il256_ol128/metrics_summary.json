@@ -1,0 +1,9 @@
+{
+  "request_throughput": 49.41820258269242,
+  "mean_ttft_ms": -307.4570288024899,
+  "mean_tpot_ms": 29.201882915736697,
+  "mean_e2e_latency_ms": 1126.0589863652185,
+  "prefix_cache_reused_ratio": 0.0,
+  "mean_kv_transfer_ms": 0.0,
+  "mean_decode_queue_ms": 0.0
+}

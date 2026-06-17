@@ -1,0 +1,63 @@
+{
+  "platform": {
+    "accelerator": {
+      "name": "rtx_pro_6000_server"
+    },
+    "disk_read_bandwidth_gb": 8,
+    "disk_write_bandwidth_gb": 8,
+    "memory_read_bandwidth_gb": 16,
+    "memory_write_bandwidth_gb": 16,
+    "num_device_per_node": 8
+  },
+  "predictor": {
+    "name": "aiconfigurator",
+    "database_path": "/mnt/nfs02/users/tjiang/Gitrepo/aiconfigurator/src/aiconfigurator/systems",
+    "device_name": "rtx_pro_6000_server",
+    "prefill_scale_factor": 1.0,
+    "decode_scale_factor": 1.0
+  },
+  "scheduler": {
+    "tp_size": 1,
+    "ep_size": 1,
+    "dp_size": 1,
+    "data_type": "BF16",
+    "kv_cache_data_type": "BF16",
+    "backend_name": "sglang",
+    "backend_version": "0.5.10"
+  },
+  "disagg": {
+    "enabled": true,
+    "backend": "single_process",
+    "decode_queue_mode": "single_replica",
+    "prefill": {
+      "device_name": "rtx_pro_6000_server",
+      "tp_size": 1,
+      "ep_size": 1,
+      "dp_size": 1,
+      "pp_size": 1,
+      "replicas": 1,
+      "max_running_per_replica": 2147483647,
+      "data_type": "BF16",
+      "kv_cache_data_type": "BF16",
+      "database_path": "/mnt/nfs02/users/tjiang/Gitrepo/aiconfigurator/src/aiconfigurator/systems",
+      "backend_version": "0.5.10"
+    },
+    "decode": {
+      "device_name": "rtx_pro_6000_server",
+      "tp_size": 1,
+      "ep_size": 1,
+      "dp_size": 1,
+      "pp_size": 1,
+      "replicas": 1,
+      "max_running_per_replica": 2147483647,
+      "data_type": "BF16",
+      "kv_cache_data_type": "BF16",
+      "database_path": "/mnt/nfs02/users/tjiang/Gitrepo/aiconfigurator/src/aiconfigurator/systems",
+      "backend_version": "0.5.10"
+    },
+    "kv_transfer": {
+      "bw_gbps": 64,
+      "latency_us": 20
+    }
+  }
+}
